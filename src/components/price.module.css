@@ -1,0 +1,177 @@
+main {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: rgb(229, 241, 217);
+}
+
+.pricing {
+  padding-top: 1rem;
+  width: 70%;
+  height: 70%;
+  display: grid;
+  border-radius: 20px;
+  grid-template-columns: 1.4fr 1.2fr 1fr;
+}
+
+.level {
+  background-color: rgb(102, 71, 171);
+  border-radius: 1rem 0 0 1rem;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+  color: #ffff;
+}
+
+.level > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.plan3 {
+  padding-right: 1.2rem;
+}
+
+.level p {
+  color: rgb(168, 150, 210);
+}
+
+.feature {
+  padding: 0 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-direction: column;
+  background-color: #ffff;
+}
+.points div {
+  padding: 0.2rem 0;
+}
+.feature svg {
+  margin-right: 1rem;
+}
+
+.feature h3 {
+  text-transform: uppercase;
+  color: rgb(102, 71, 171);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.feature a {
+  padding-left: 2rem;
+  font-weight: 800;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+  background-color: rgb(242, 242, 242);
+  border-radius: 0 1rem 1rem 0;
+}
+
+.price p {
+  text-transform: uppercase;
+  color: rgb(102, 71, 171);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.price span {
+  display: block;
+  text-transform: none;
+  color: rgb(115, 115, 115);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.price h2 {
+  color: rgb(102, 71, 171);
+  font-size: 4rem;
+}
+
+.price button {
+  background-color: rgb(128, 188, 64);
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #ffff;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: none;
+}
+
+/* --------------meadia queries--------------------- */
+
+@media (max-width: 480px) {
+  html {
+    font-size: 82.5%;
+  }
+  main {
+    height: 150vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .plans {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(119, 92, 178);
+  }
+
+  .pricing {
+    width: 80%;
+    height: 100%;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1.5fr 1.3fr 1fr;
+  }
+
+  .level {
+    border-radius: 0;
+  }
+
+  .price {
+    border-radius: 0;
+  }
+
+  .btn {
+    margin: 2rem auto;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .btn a {
+    padding: 0.8rem;
+    text-decoration: none;
+    color: rgb(128, 188, 64);
+    border-radius: 0.5rem;
+    border: 2px solid rgb(128, 188, 64);
+  }
+
+  .btn a:hover {
+    background-color: #fff;
+    color: rgb(128, 188, 64);
+  }
+
+  .btn .active {
+    background-color: rgb(128, 188, 64);
+    color: white;
+  }
+}

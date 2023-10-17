@@ -1,0 +1,118 @@
+nav {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo svg {
+  display: none;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.menu2 {
+  display: none;
+}
+
+.menu div:hover {
+  cursor: pointer;
+}
+
+.price {
+  margin-top: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid rgb(128, 188, 64);
+}
+
+.price span {
+  color: rgb(128, 188, 64);
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 0 0.2rem;
+}
+
+.btn {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btn a {
+  padding: 0.8rem;
+  text-decoration: none;
+  color: rgb(128, 188, 64);
+  border-radius: 0.5rem;
+  border: 2px solid rgb(128, 188, 64);
+}
+
+.btn a:hover {
+  background-color: #fff;
+  color: rgb(128, 188, 64);
+}
+
+.btn .active {
+  background-color: rgb(128, 188, 64);
+  color: white;
+}
+
+/* -----------------Meadia Queries---------------- */
+
+@media (max-width: 480px) {
+  nav {
+    height: 35vh;
+    width: 100%;
+    gap: 5.5rem;
+    flex-direction: column;
+  }
+  .menu {
+    display: none;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .logo svg {
+    display: inline-block;
+    float: right;
+    margin-top: 1rem;
+  }
+
+  .menu2 {
+    display: inline-block;
+  }
+  .menu2 div {
+    padding: 0.5rem;
+    width: 23.5rem;
+    font-weight: 800;
+  }
+
+  .price {
+    border: 0;
+    padding: 0;
+  }
+
+  .price span {
+    float: right;
+    position: relative;
+    bottom: 0.8rem;
+  }
+
+  .btn {
+    display: none;
+  }
+}
